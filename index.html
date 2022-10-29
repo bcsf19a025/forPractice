@@ -24,7 +24,7 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img
-            src="pic.png"
+            src="/static/pic.png"
             alt="Logo"
             width="30"
             height="24"
@@ -79,9 +79,9 @@
       <li>Git Bash here & Git GUI here</li>
       </ul>
     </p>
-    <img src="bash.png" class="rounded float-left" alt="Bash Photo">
+    <img src="/static/bash.png" class="rounded float-left" alt="Bash Photo">
     <p>Now click on it it will look like this</p>
-    <img src="git-terminal.png" class="rounded float-left" alt="Terminal Photo">
+    <img src="/static/git-terminal.png" class="rounded float-left" alt="Terminal Photo">
     <p>
       You can run command <b>git version</b> to check version of git
       you have  downloaded.
@@ -94,13 +94,27 @@
       Now run the command <b>git status</b> after adding some files, you will notice that 
       it will show some red lines.Like this 
     </p>
-    <img src="git-add.png" class="rounded float-left" alt="Bash Photo">
+    <div class="text-center">
+      <img src="/static/git-add.png" class="rounded float-left" alt="Bash Photo">
+    </div>
     <p>
       Basically how it all it all works can be described in one photo.
     </p>
-    <img src="git-workflow.png" class="rounded float-left" alt="Bash Photo">
+    <div class="text-center">
+    <img src="/static/git-workflow.png" class="rounded float-left" alt="Bash Photo">
+    </div>
     <p>
-      First when we make some changes you need 
+      First when we make some changes(added some file or anything), git will realize that you have
+      made some changes, now we have stage our changes. This is the <b>second step</b> in using 
+      git and making commit. First you made some changes, now you will add those files to 
+      the staging area.
     </p>
-  </body>
+    <p> Run the command <b>git add .</b> on your Git Bash Terminal. What this command 
+    will do will add all those files to staging area. You can also mention the file
+    name incase of "." in which you have made changes.</p>
+    <p>
+      Now finally run the command <b>git commit -m "some useful message"</b> to commit your
+      changes.
+    </p>
+  </body> 
 </html>
